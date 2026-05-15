@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Asser Elsheikh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-light);
+        }
+        .project-content {
+            padding: 2rem;
+            flex: 1;
+        }
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Asser<span>Elsheikh</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Experience & Education</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section-header">
+            <h2>Featured Projects</h2>
+            <p>A selection of my recent analytical work, from machine learning to interactive web apps.</p>
+        </section>
+
+        <section class="grid-3">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">RFM Analysis</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                    <h3>Retail Customer Segmentation</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Executed a comprehensive clustering analysis on a dataset of 9,800+ retail customers. By applying RFM (Recency, Frequency, Monetary) analysis and seasonal trend modeling, I successfully categorized the customer base into high-value, at-risk, and dormant tiers. This strategic segmentation directly informed and improved the timing and targeting of marketing campaigns.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">ARIMA</span>
+                        <span class="tag">Prophet</span>
+                    </div>
+                    <h3>Interactive Sales Forecasting Web App</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Engineered and deployed an end-to-end interactive web application tailored for small business owners. The platform allows users to upload raw sales data, which is then automatically processed through advanced time-series forecasting models (ARIMA and Facebook Prophet) to generate actionable future sales predictions and intuitive visual reports.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Logistic Regression</span>
+                        <span class="tag">ANOVA</span>
+                        <span class="tag">ETL</span>
+                    </div>
+                    <h3>Large-Scale Demographic Risk Analysis</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Engineered a robust data pipeline to ingest, merge, and clean raw .xpt files spanning 12 years of complex survey data. <strong>This project was conducted using NHANES data.</strong> I deployed advanced statistical methods including logistic regression, ANOVA, and Chi-square tests to successfully pinpoint key lifestyle predictors and health risk factors across demographics.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NLP (TextBlob)</span>
+                        <span class="tag">Logistic Regression</span>
+                    </div>
+                    <h3>Employee Sentiment Survey Analysis</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Conducted an in-depth analysis of 1,259 internal survey responses. Utilizing Natural Language Processing (TextBlob) for automated sentiment scoring alongside logistic regression, I discovered a statistically significant correlation proving that strong management support is the primary predictor of positive employee behavior and retention.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Database Design</span>
+                        <span class="tag">Data Analytics</span>
+                    </div>
+                    <h3>Superstore Database Architecture & Analytics</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Architected a comprehensive relational database schema for a superstore, modeling stocks, categories, receipts, customers, and sales. Developed advanced SQL queries employing window functions, CTEs, and aggregations to track running totals, calculate category sales contributions, pinpoint inactive customers, and monitor price volatility over time. Engineered a clean view for seamless CSV data pipeline exports.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Looker Studio</span>
+                        <span class="tag">BI Dashboard</span>
+                        <span class="tag">Stakeholder Reporting</span>
+                    </div>
+                    <h3>Executive Performance & Operations Dashboard</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Designed a clear, highly actionable Looker Studio dashboard that simplifies complex daily operations into digestible insights (including peak customer hours, revenue vs. spendings, and due payments). Configured automated, scheduled weekly email deliveries directly to stakeholders to ensure consistent visibility into core KPIs without any manual intervention. Included an integrated FAQs/documentation section to streamline data interpretation for non-technical executives.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Data Merging</span>
+                        <span class="tag">A/B Testing</span>
+                    </div>
+                    <h3>Quantium Retail Strategy Analysis</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Conducted extensive retail transaction and customer behavior analysis. Processed complex datasets across 272 stores and 114 products to identify key demographics ("OLDER SINGLES/COUPLES") driving the highest total sales volume. Formulated data-driven recommendations for targeted marketing on top-performing products. Evaluated specific store trials (stores 77, 86, and 88) against control stores to assess total revenue, customer count, and average transactions per customer to guide broader rollout decisions.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Feature Engineering</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <h3>SLU Opportunity Data Enhancement</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Spearheaded rigorous data cleaning and advanced feature engineering for the SLU Opportunity Wise dataset. Systematically identified massive data gaps (e.g., 99% missing values in reward-related columns) and removed duplications. Extracted immense value from existing date columns by engineering entirely new metrics, including exact Age, Engagement Duration, Time in Opportunity, and structured cohort analysis features (signup month/year), outputting a highly refined data pipeline.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">EDA</span>
+                        <span class="tag">Demographic Profiling</span>
+                        <span class="tag">Statistical Insights</span>
+                    </div>
+                    <h3>Adult Demographic Exploratory Analysis</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Conducted a comprehensive exploratory data analysis (EDA) on adult census demographic data. Investigated the complex intersectionality of race, age, education, and geographic location with earning potential (income &gt; 50K). Extracted key insights, such as revealing that 10.65% of individuals with advanced degrees earn over 50K, while analyzing the nuanced relationships between minimum work hours and total compensation across diverse geographic markets like the US and India.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Asser Elsheikh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
